@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox exercise 2</title>
+    <style>
+        body{
+            background-color:aqua;
+        }
+        .container_1{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-content: center;
+            margin:70px 70px 0px 70px;
+            flex-shrink: 10;
+        }
+        .container_2{
+            display:flex;
+            flex-direction: row;
+            margin:0px 70px 70px 70px;
+            justify-content: space-around;
+            align-content: center;
+            flex-shrink: 10;
+        }
+        .box{
+            width:30%;
+            height:60%;
+            align-self:center;
+            text-align: center;
+            border-radius: 15px;
+            background-color:#f3e0dc; 
+            padding-bottom:20px;
+            box-shadow: 5px 5px 20px rgb(7, 182, 182);
+        }
+        img{
+            object-fit: contain;
+        }
+        #imagebox_1{
+            clip-path: circle(37.1% at 54% 53%);
+            max-width:75%;
+            width:min-content;
+            align-self: center;
+            height: auto;
+        }
+        #imagebox_2{
+            clip-path: circle(43.6% at 49% 50%);
+            max-width:80%;
+            width:min-content;
+            align-self: center;
+            height: auto;
+        }
+        #imagebox_3{
+            clip-path: circle(34.5% at 50% 48%);
+            max-width:85%;
+            width:min-content;
+            align-self: center;
+            height: auto;
+        }
+        #imagebox_4{
+            clip-path: circle(37.9% at 50% 50%);
+            max-width:90%;
+            width:min-content;
+            height:auto;
+        }
+        #imagebox_5{
+            clip-path: circle(42.9% at 50% 50%);
+            max-width:60%;
+            height:auto;
+            width:min-content;
+        }
+        #imagebox_6{
+            clip-path: circle(46.2% at 47% 54%);
+            max-width:80%;
+            width:min-content;
+            height:auto;
+        }
+        h1{
+            color:#5c2018;
+            font-family:cursive;
+        }
+        p{
+            text-align: center;
+            margin: 60px;
+            font-family: 'Kanit', sans-serif;
+            font-size: 20px;
+            width:60;
+        }
+        button{
+            height:40px;
+            width:170px;
+            font-family:cursive ;
+            font-size: 20px;
+            border-radius: 15px;
+            color:#f3e0dc;
+            border:none;
+            background-color:coral;
+            box-shadow: 5px 5px 8px #d4a59a;
+        }
+        .box:hover{
+            box-shadow: 5px 5px 20px rgb(1, 86, 86);
+        }
+        img:hover{
+            cursor: pointer;
+        }
+        button:hover{
+            cursor: pointer;
+            box-shadow: 5px 5px 11px rgb(198, 95, 58);
+        }
+        @media all and (orientation:portrait){
+            button{
+                height: 80px;
+                width:100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container_1">
+        <!-- Facebook -->
+        <div class="box" id="box_1">
+            <div>
+                <a href="https://www.facebook.com/" target="_blank"><img class="imagebox" id="imagebox_1" src="https://www.pngitem.com/pimgs/m/2-25415_new-facebook-logo-2019-hd-png-download.png" alt="image"></a>
+            </div>
+            <h1><b>Facebook</b></h1>
+            <p>Facebook is an online social media and social networking service owned by American company Meta Platforms. Founded in 2004 by Mark Zuckerberg with fellow Harvard College students and roommates...</p>
+            <a href="https://en.wikipedia.org/wiki/Facebook" target="_blank"><button>Know More</button></a>
+        </div>
+        
+        <!-- Instagram -->
+        <div class="box" id="box_2">
+            <div>
+                <a href="https://www.instagram.com/" target="_blank"><img class="imagebox" id="imagebox_2" src="https://files.oyebesmartest.com/uploads/preview/-501557145971owq9rogecr.png" alt="image"></a>
+            </div>
+            <h1><b>Instagram</b></h1>
+            <p>Instagram is a photo and video sharing social networking service owned by American company Meta Platforms. The app allows users to upload media that can be edited with filters and organized by hashtags and geographical tagging. Posts can be shared publicly or with preapproved followers. Users can browse other users' content by tag and location, view trending content, like photos, and follow other users to add their content to a personal feed</p>
+            <a href="https://en.wikipedia.org/wiki/Instagram" target="_blank"><button>Read More</button></a>
+        </div>
+
+        <!-- Twitter -->
+        <div class="box" id="box_3">
+            <div>
+                <a href="https://twitter.com/" target="_blank"><img  class="imagebox" id="imagebox_3" src="https://www.pqmagazine.com/wp-content/uploads/2020/06/Twitter-logo.jpg" alt="image"></a>
+            </div>
+            <h1><b>Twitter</b></h1>
+            <p>Twitter is an online social media and social networking service owned and operated by American company Twitter, Inc., on which users send and respond publicly or privately texts, images and videosknown as "tweets".</p>
+            <a href="https://en.wikipedia.org/wiki/Twitter" target="_blank"><button>Know More</button></a>
+        </div>
+    </div>
+    <div class="container_2">
+        <!--Snapchat-->
+        <div class="box" id="box_4">
+            <div>
+                <a href="https://www.snapchat.com/" target="_blank"><img class="imagebox" id="imagebox_4" src="https://static.vecteezy.com/system/resources/previews/002/432/911/non_2x/social-media-snapchat-original-latest-logo-free-vector.jpg" alt="image"></a>
+            </div>
+            <h1><b>Snapchat</b></h1>
+            <p>Snapchat is an American multimedia instant messaging app and service developed by Snap Inc., originally Snapchat Inc. One of the principal features of Snapchat is that pictures and messages areusually only available for a short time before they become inaccessible to their recipients. The app has evolved from originally focusing on person-to-person photo sharing to presently featuring users'"Stories" of 24 hours of chronological content, along with "Discover", letting brands show ad-supported short-form content.</p>
+            <a href="https://en.wikipedia.org/wiki/Snapchat" target="_blank"><button>Read more</button></a>
+        </div>
+    
+        <!--Linkedin-->
+        <div class="box" id="box_5">
+            <div>
+                <a href="https://www.linkedin.com/" target="_blank"><img class="imagebox" id="imagebox_5" src="https://cdn-icons-png.flaticon.com/512/179/179330.png" alt="image"></a>
+            </div>
+            <h1><b>Linkedin</b></h1>
+            <p>LinkedIn is a business and employment-focused social media platform that works through websites and mobile apps. It launched on May 5, 2003.[4] It is now owned by Microsoft.The platform is primarily used for professional networking and career development, and allows job seekers to post their CVs and employers to post jobs.</p>
+            <a href="https://en.wikipedia.org/wiki/LinkedIn" target="_blank"><button>Know More</button></a>
+        </div>
+
+        <!--Whatsapp-->
+        <div class="box" id="box_6">
+            <div>
+                <a href="https://www.whatsapp.com/" target="_blank"><img class="imagebox" id="imagebox_6" src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="image"></a>
+            </div>
+            <h1><b>Whatsapp</b></h1>
+            <p>WhatsApp (also called WhatsApp Messenger) is an internationally available freeware, cross-platform, centralized instant messaging (IM) and voice-over-IP (VoIP) service owned by US tech conglomerate Meta. It allows users to send text and voice messages, make voice and video calls, and share images, documents, user locations, and other content. WhatsApp's client application runs on mobile devices, and can be accessed from computers. The service requires a cellular mobile telephone number to sign up.</p>
+            <a href="https://en.wikipedia.org/wiki/WhatsApp" target="_blank"><button>Read More</button></a>
+        </div>
+    </div>
+</body>
+</html>
